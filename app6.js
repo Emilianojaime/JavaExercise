@@ -11,11 +11,11 @@ e) Convertir la validación del ejercicio 6b) en una función separada y llamarl
 var a = 1;
 var b = 2;
 
-function suma(a, b){ 
+function sum(a, b){ 
  return c = a + b; 
 }
 
-var c = suma(a, b);
+var c = sum(a, b);
 
 console.log('El resultado de sumar', a, '+', b, 'es', c);
 
@@ -24,7 +24,7 @@ console.log('El resultado de sumar', a, '+', b, 'es', c);
 var a = 4;
 var b = 3;
 
-function suma2(a, b){ 
+function sum2(a, b){ 
  if ( (typeof a) === 'number' && (typeof b) === 'number'){
   return c = a + b;
 } else {
@@ -32,7 +32,7 @@ function suma2(a, b){
   return NaN;   
 }
 }
-var f = suma2(a, b);
+var f = sum2(a, b);
 
 console.log('El resultado de sumar', a, '+', b, 'es', f);
 
@@ -56,16 +56,16 @@ function validate_integer(a){
 var a = 4;
 var b = 2;
 
-function suma3(a, b){ 
+function sum3(a, b){ 
  if ( (typeof a) === 'number' && (typeof b) === 'number'){
-    estado1 = validate_integer(a);
-    estado2 =  validate_integer(b);
-   if (estado1 && estado2){
+    state1 = validate_integer(a);
+    state2 =  validate_integer(b);
+   if (state1 && state2){
      return c = a + b;
-    }else if (!estado1){
+    }else if (!state1){
      console.log('El valor', a, 'no es un entero')
      return Math.round(a);
-    }else if (!estado2){
+    }else if (!state2){
      console.log('El valor', b, 'no es un entero')
      return Math.round(b);   
     }
@@ -75,7 +75,7 @@ function suma3(a, b){
   return NaN;   
 }
 }
-var f = suma3(a, b);
+var f = sum3(a, b);
 
 console.log('El resultado de sumar', a, '+', b, 'es', f);
 
@@ -86,21 +86,24 @@ console.log('El resultado de sumar', a, '+', b, 'es', f);
 a = 1;
 b = 14;
 
-function suma6(a, b){ 
-    validacion_numeros(a, b)
+function validate_numbers(a,b) { 
+  if ( (typeof a) === 'number' && (typeof b) === 'number'){
+      return c = a + b;
+    } else {
+      console.log('Uno o mas de los parametros no es un numero');
+      return NaN;   
+  } 
+  }
+
+
+function sum6(a, b){ 
+    validate_numbers(a, b)
     return c = a + b; 
    }
 
-function validacion_numeros(a,b) { 
-if ( (typeof a) === 'number' && (typeof b) === 'number'){
-    return c = a + b;
-  } else {
-    console.log('Uno o mas de los parametros no es un numero');
-    return NaN;   
-} 
-}
-
-suma6(a,b);
+sum6(a,b);
 
 // NOTA: Dado que los ejercicios requerian que trabajemos sobre las funciones del ejercicio anterior
 // opte por ir cambiando el nombre de las mismas agregando numeros
+
+console.log('Fin Ejercicio 6 --------------------------------------');

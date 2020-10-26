@@ -37,3 +37,5 @@ if (age < 2){
 } else { 
    console.log('La persona es un Anciano')
 }
+
+console.log('Fin Ejercicio 4 , comienzo Ejercicio 5 --------------------------------------');

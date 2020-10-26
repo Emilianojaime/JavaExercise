@@ -9,35 +9,37 @@ f) Crear una variable de tipo string con al menos 2 palabras largas (10 caracter
 
 // a)
 
-var palabra = 'intoxicacion';
-console.log('El texto es', palabra,'y su transformacion es', palabra.toUpperCase() );
+var word = 'intoxicacion';
+console.log('El texto es', word,'y su transformacion es', word.toUpperCase() );
 
 // b)
 
-var palabra2 = 'desintoxicacion';
-var sub_palabra2 = palabra2.substring(0,5);
-console.log('El texto es', palabra2,'y su subcadena (primeros 5 caracteres) es', sub_palabra2 );
+var word2 = 'desintoxicacion';
+var sub_word2 = word2.substring(0,5);
+console.log('El texto es', word2,'y su subcadena (primeros 5 caracteres) es', sub_word2 );
 
 // c)
 
-var palabra3 = 'metropolis';
-var sub_palabra3 = palabra3.substring (7);
-console.log('El texto es', palabra3,'y su subcadena (ultimos 3 caracteres) es', sub_palabra3 );
+var word3 = 'metropolis';
+var sub_word3 = word3.substring (7);
+console.log('El texto es', word3,'y su subcadena (ultimos 3 caracteres) es', sub_word3 );
 
 // d)
 
-var palabra4 = 'sala de estar';
-var sub_palabra4 = ((palabra4.toUpperCase()).substring(0, 1) + (palabra4.toLowerCase()).substring(1));
-console.log('El texto resultante del ejercicio es', sub_palabra4 );
+var word4 = 'sala de estar';
+var sub_word4 = ((word4.toUpperCase()).substring(0, 1) + (word4.toLowerCase()).substring(1));
+console.log('El texto resultante del ejercicio es', sub_word4 );
 
 // e)
 
-var palabra5 = 'sala de espera';
-var indice_palabra5 = palabra5.indexOf(' ', 0);
-console.log('La posicion del primer espacio en blanco de', palabra5, 'es', indice_palabra5 );
+var word5 = 'sala de espera';
+var index_word5 = word5.indexOf(' ', 0);
+console.log('La posicion del primer espacio en blanco de', word5, 'es', index_word5 );
 
 // f) NOTA: personalmente habria puesto variables intermedias para que la sentencia no quede tan larga pero supuse que la "idea" del ejercicio era hacerlo asi.
 
-var palabra6 = 'reacondicionador de bibliotecas'
-var sub_palabra6 = ((palabra6.toUpperCase()).substring(0, 1) + (palabra6.toLowerCase()).substring(1, palabra6.indexOf('de', 0))) + ( (palabra6.toUpperCase()).substring((palabra6.indexOf('bibliotecas', 0)), ((palabra6.indexOf('bibliotecas', 0) + 1)))) + (palabra6.toLowerCase()).substring((palabra6.indexOf('bibliotecas', 0) + 1))
-console.log('La nueva cadena es', sub_palabra6 )
+var word6 = 'reacondicionador de bibliotecas'
+var sub_word6 = ((word6.toUpperCase()).substring(0, 1) + (word6.toLowerCase()).substring(1, word6.indexOf('bibliotecas', 0))) + ( (word6.toUpperCase()).substring((word6.indexOf('bibliotecas', 0)), ((word6.indexOf('bibliotecas', 0) + 1)))) + (word6.toLowerCase()).substring((word6.indexOf('bibliotecas', 0) + 1))
+console.log('La nueva cadena es', sub_word6 )
+
+console.log('Fin Ejercicio 2 , comienzo Ejercicio 3 --------------------------------------');

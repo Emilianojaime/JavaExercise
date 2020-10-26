@@ -11,41 +11,41 @@ g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (u
 
  // a)
 
- var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
- console.log('Los meses numero 5 y 11 son respectivamente (sin considerar 0)', meses[4], 'y', meses[10]);
+ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+ console.log('Los meses numero 5 y 11 son respectivamente (sin considerar 0)', months[4], 'y', months[10]);
 
  // b)
 
-meses.sort();
-console.log('Los meses ordenados alfabeticamente son', meses);
+months.sort();
+console.log('Los meses ordenados alfabeticamente son', months);
 
  // c)
 
- meses.push('Elemento Posterior');
- meses.unshift('Elemento Anterior');
- console.log('El arreglo con los elemntos agregados es', meses);
+ months.push('Elemento Posterior');
+ months.unshift('Elemento Anterior');
+ console.log('El arreglo con los elemntos agregados es', months);
 
  // d)
 
- meses.pop();
- meses.shift();
- console.log('El arreglo con los elemntos sustraidos es', meses);
+ months.pop();
+ months.shift();
+ console.log('El arreglo con los elemntos sustraidos es', months);
 
  // e)
-
- meses.reverse();
- console.log('El arreglo con los meses invertidos es', meses);
+ 
+ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+ months.reverse();
+ console.log('El arreglo con los meses invertidos es', months);
 
  // f)
 
- var cadena = meses.join('-');
- console.log('El string es', cadena);
+ var chain = months.join('-');
+ console.log('El string es', chain);
 
  // g)
 
- var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
- meses.splice(0, 4);
- meses.splice(7, 7);
- mesescopia = meses;
- console.log('El arreglo resultante es', mesescopia);
+ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+ monthscopy = months.slice(4, 11);
+ console.log('El arreglo resultante es', monthscopy);
 
+ console.log('Fin Ejercicio 3 , comienzo Ejercicio 4 --------------------------------------');
